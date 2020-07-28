@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'UAS-TEKWEB'`, () => {
+  it(`should have as title 'angular9-starter'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('UAS-TEKWEB');
+    expect(app.title).toEqual('angular9-starter');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('UAS-TEKWEB app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('angular9-starter app is running!');
   });
 });
